@@ -1,0 +1,14 @@
+{
+  "name": "basic",
+  "version": "1.0.0",
+  "description": "basic learning",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "shivaraj",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.12.0"
+  }
+}
