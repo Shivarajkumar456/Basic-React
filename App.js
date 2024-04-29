@@ -1,9 +1,13 @@
-const heading = React.createElement("h1", {id:'heading'}, "Hello React World!");
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-const parent = React.createElement("div", {id: "parent"}, 
-React.createElement("div", {id: "child"}, 
-[React.createElement("h1", {id: "header", key: '1'}, "This is Header"),
-React.createElement("p", {id: "para", key: '2'}, "This is paragraph")]));
+
+// React.createElement => Object => HTML element render
+const heading = React.createElement("h1", {id:'heading'}, "Hello React World!🚀");
 const root = ReactDOM.createRoot(document.getElementById("root"));
-console.log(parent)
-root.render(parent);
+
+// JSX - HTML/XML like syntax (Transpiled before it reaches the JS engine - Parcel - Babel)
+
+const jsxHeading = <h1 id="heading">Basic React From JSX 🚀</h1>
+
+root.render(jsxHeading);
